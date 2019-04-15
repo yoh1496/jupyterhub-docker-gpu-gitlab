@@ -1,4 +1,5 @@
-secrets/
+secrets/oauth.env
+secrets/postgres.env
 userlist
 .DS_Store
 .python-version
