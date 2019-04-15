@@ -3,6 +3,9 @@
 
 FROM nvidia/cuda:9.0-cudnn7-devel-ubuntu16.04
 
+ARG PROXY
+ENV HTTP_PROXY=$PROXY HTTPS_PROXY=PROXY  http_proxy=$PROXY https_proxy=$PROXY
+
 LABEL maintainer="Hironao Namba <namba@aptpod.co.jp>"
 
 USER root
